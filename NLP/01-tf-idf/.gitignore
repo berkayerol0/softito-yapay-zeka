@@ -1,0 +1,18 @@
+# Veri seti (Kaggle'dan indirilir, repoya konmaz)
+data/*.csv
+
+# Eğitilmiş model (yeniden üretilebilir)
+models/*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Jupyter / OS / editör
+.ipynb_checkpoints/
+.DS_Store
+.vscode/
+.idea/
