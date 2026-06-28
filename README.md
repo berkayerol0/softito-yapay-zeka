@@ -17,10 +17,16 @@ softito-yapay-zeka/
 
 ## NLP
 
-| Proje | Açıklama | Teknoloji |
-|-------|----------|-----------|
-| [01-tf-idf](NLP/01-tf-idf) | TF-IDF ile metin sınıflandırma | Scikit-learn |
-| [03-rnn](NLP/03-rnn) | HDFS log anomali tespiti | PyTorch, Vanilla RNN |
+Doğal dil işlemede temsil yöntemlerini sıfırdan ele alan bir öğrenme yolculuğu. Her bölüm bir önceki yöntemin eksiğini gösterir ve bir sonrakinin neden ortaya çıktığını açıklar.
+
+| # | Proje | Açıklama | Teknoloji | Durum |
+|---|-------|----------|-----------|-------|
+| 01 | [TF-IDF](NLP/01-tf-idf) | Metin sınıflandırma — baseline | Scikit-learn | ✅ Hazır |
+| 02 | Kelime Vektörleri | Word2Vec, GloVe, FastText — anlamsal temsil | — | 🔜 Yakında |
+| 03 | [RNN](NLP/03-rnn) | HDFS log anomali tespiti — dizisel bağlam | PyTorch | ✅ Hazır |
+| 04 | LSTM / GRU | Uzun vadeli bağımlılık & vanishing gradient | PyTorch | 🔜 Yakında |
+| 05 | Attention | Uzak kelimeler arası ilişki | PyTorch | 🔜 Yakında |
+| 06 | Transformer | Self-Attention + paralellik | PyTorch | 🔜 Yakında |
 
 ## Machine Learning
 
