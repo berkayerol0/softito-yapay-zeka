@@ -44,7 +44,7 @@ Word2Vec ve GloVe bu kelimelerin hiçbirine cevap veremez — FastText subword'l
 | GloVe | %5.7 (115/2004) |
 | Word2Vec | %5.1 (103/2004) |
 
-**Ama toplam skor yanıltıcı — asıl hikaye kategori dağılımında** (`figures/02`):
+**Ama toplam skor yanıltıcı — asıl hikaye kategori dağılımında** (aşağıdaki grafik):
 
 | Kategori tipi | FastText | Word2Vec | GloVe |
 |---|---|---|---|
@@ -57,10 +57,14 @@ Word2Vec ve GloVe bu kelimelerin hiçbirine cevap veremez — FastText subword'l
 FastText, ek-tabanlı (morphological) dilbilgisel ilişkilerde ezici üstün çünkü subword'ler tam da bu ekleri (-ly, -er, -s, un-) yakalıyor. Buna karşılık saf anlamsal ilişkilerde (başkent-ülke) Word2Vec/GloVe daha iyi, çünkü orada kelimenin karakterleri değil bağlamı önemli. **Bu, üç yöntemin farklı şeyler öğrendiğinin somut kanıtıdır.**
 
 Görseller `figures/` klasöründe:
-- `01_oov_capability.png` — OOV kelimeler için komşular (FastText'in imza özelliği)
-- `02_analogy_accuracy_comparison.png` — FastText vs Word2Vec vs GloVe, kategori bazlı
-- `03_tsne_word_clusters.png` — 2D kelime kümesi görselleştirmesi
-- `04_nearest_neighbors.png` — örnek kelimelerin en yakın komşuları
+
+![OOV Yeteneği](figures/01_oov_capability.png)
+
+![Analoji Doğruluğu Karşılaştırması — FastText vs Word2Vec vs GloVe](figures/02_analogy_accuracy_comparison.png)
+
+![t-SNE Kelime Kümeleri](figures/03_tsne_word_clusters.png)
+
+![En Yakın Komşular](figures/04_nearest_neighbors.png)
 
 ## Üç Yöntemin Karşılaştırması (Özet)
 

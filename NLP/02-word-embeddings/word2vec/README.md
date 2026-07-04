@@ -47,13 +47,17 @@ Kelimeleri, anlamca benzer olanların vektör uzayında birbirine yaklaştığı
 | Bizim implementasyon (sıfırdan) | %5.1 (102/2004) |
 | Gensim Word2Vec (aynı veri, aynı hiperparametreler) | %0.6 (13/2004) |
 
-t-SNE görselleştirmesinde ülkeler, başkentler, sayılar, meslekler ve zaman kelimeleri kendi aralarında net kümeler oluşturuyor (`figures/03_tsne_word_clusters.png`).
+t-SNE görselleştirmesinde ülkeler, başkentler, sayılar, meslekler ve zaman kelimeleri kendi aralarında net kümeler oluşturuyor.
 
 Görseller `figures/` klasöründe:
-- `01_training_loss.png` — eğitim kaybı
-- `02_analogy_accuracy_comparison.png` — kategori bazlı doğruluk, gensim kıyaslı
-- `03_tsne_word_clusters.png` — 2D kelime kümesi görselleştirmesi
-- `04_nearest_neighbors.png` — örnek kelimelerin en yakın komşuları
+
+![Eğitim Kaybı](figures/01_training_loss.png)
+
+![Analoji Doğruluğu Karşılaştırması](figures/02_analogy_accuracy_comparison.png)
+
+![t-SNE Kelime Kümeleri](figures/03_tsne_word_clusters.png)
+
+![En Yakın Komşular](figures/04_nearest_neighbors.png)
 
 ## Metodolojik Notlar (Dürüst Okuma)
 

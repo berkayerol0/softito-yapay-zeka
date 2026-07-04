@@ -44,10 +44,14 @@ Amaç:  w_i · w_j + b_i + b_j  ≈  log(X_ij)
 Bu küçük korpus ölçeğinde GloVe, Word2Vec'i özellikle anlamsal (semantic) kategorilerde geride bırakıyor: başkent-ülke %17, şehir-eyalet %21, aile ilişkileri %19. Bu, GloVe'un global istatistiği doğrudan kullanmasının küçük veride avantaj sağladığını gösteriyor.
 
 Görseller `figures/` klasöründe:
-- `01_training_loss.png` — ağırlıklı MSE kaybı
-- `02_analogy_accuracy_comparison.png` — GloVe vs Word2Vec, kategori bazlı
-- `03_tsne_word_clusters.png` — 2D kelime kümesi görselleştirmesi
-- `04_nearest_neighbors.png` — örnek kelimelerin en yakın komşuları
+
+![Eğitim Kaybı](figures/01_training_loss.png)
+
+![Analoji Doğruluğu Karşılaştırması — GloVe vs Word2Vec](figures/02_analogy_accuracy_comparison.png)
+
+![t-SNE Kelime Kümeleri](figures/03_tsne_word_clusters.png)
+
+![En Yakın Komşular](figures/04_nearest_neighbors.png)
 
 ## Metodolojik Notlar
 
