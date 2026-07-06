@@ -12,7 +12,9 @@ softito-yapay-zeka/
 ├── EDA/                  # Keşifsel veri analizi projeleri
 ├── LLM/                  # Büyük dil modeli projeleri
 ├── SLM/                  # Küçük dil modeli projeleri
-└── Python/               # Python projeleri
+├── Python/               # Python projeleri
+├── Docker/               # Docker & konteynerizasyon projeleri
+└── BigData/              # Büyük veri / dağıtık işleme projeleri
 ```
 
 ## NLP
@@ -36,6 +38,24 @@ Doğal dil işlemede temsil yöntemlerini sıfırdan ele alan bir öğrenme yolc
 | [ML Comparison](MachineLearning/ML_Comparison) | Model karşılaştırması | Scikit-learn |
 | [Mobile Price](MachineLearning/mobile_price) | Fiyat tahmini | Scikit-learn |
 
+## Docker
+
+Tek konteynerden çok servisli mikroservis mimarisine kadar artan karmaşıklıkla ilerleyen Docker pratikleri.
+
+| Proje | Açıklama | Teknoloji |
+|-------|----------|-----------|
+| [1-single-container-xgboost](Docker/1-single-container-xgboost) | Tek Dockerfile ile paketlenmiş, öğrencilerde AI kullanımının tükenmişlik riskine etkisini tahmin eden XGBoost modeli | Docker, XGBoost |
+| [2-docker-compose-3ML](Docker/2-docker-compose-3ML) | Sağlık sigortası verisiyle 3 farklı ML görevini (regresyon, sınıflandırma, kümeleme) Docker Compose ile paralel çalıştıran proje | Docker Compose, XGBoost, Scikit-learn |
+| [3-microservices-ml-gateway](Docker/3-microservices-ml-gateway) | 5 bağımsız Flask ML servisi + API Gateway — uçuş fiyatı verisiyle mikroservis mimarisi örneği | Flask, Docker Compose |
+
+## Big Data
+
+Büyük veri işleme ve dağıtık hesaplama üzerine geliştirdiğim projeler.
+
+| Proje | Açıklama | Teknoloji |
+|-------|----------|-----------|
+| [big-data-log-analytics](BigData/big-data-log-analytics) | 5 milyon satırlık web sunucusu logunun PySpark ile üretilip analiz edildiği pipeline — HTTP durum kodları, trafik, hata oranları ve daha fazlası | PySpark, Apache Spark SQL |
+
 ## Teknolojiler
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -43,6 +63,9 @@ Doğal dil işlemede temsil yöntemlerini sıfırdan ele alan bir öğrenme yolc
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=flat&logo=apachespark&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white)
 
 ## Lisans
 
