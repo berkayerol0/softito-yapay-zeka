@@ -1,0 +1,74 @@
+<svg viewBox="0 0 900 460" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+  <rect width="900" height="460" fill="#ffffff"/>
+
+  <text x="450" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#1a1a1a">Flight ML — Microservices + API Gateway</text>
+
+  <!-- Client -->
+  <rect x="380" y="55" width="140" height="45" rx="8" fill="#2563eb"/>
+  <text x="450" y="83" text-anchor="middle" font-size="13" fill="white">İstemci (curl)</text>
+
+  <line x1="450" y1="100" x2="450" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="470" y="123" font-size="11" fill="#555">HTTP :8080</text>
+
+  <!-- Gateway -->
+  <rect x="350" y="140" width="200" height="55" rx="8" fill="#7c3aed"/>
+  <text x="450" y="163" text-anchor="middle" font-size="14" fill="white" font-weight="bold">ml-gateway</text>
+  <text x="450" y="181" text-anchor="middle" font-size="11" fill="#e9defc">port 8080 · yönlendirme</text>
+
+  <!-- Connectors to 5 services (row1: 3 regression, row2: 2 classification) -->
+  <line x1="400" y1="195" x2="130" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="440" y1="195" x2="315" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="460" y1="195" x2="500" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="480" y1="195" x2="685" y2="250" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="500" y1="195" x2="415" y2="345" stroke="#333" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Row 1: regression services -->
+  <g>
+    <rect x="40" y="250" width="180" height="70" rx="8" fill="#0ea5e9"/>
+    <text x="130" y="275" text-anchor="middle" font-size="13" fill="white" font-weight="bold">ml-linear</text>
+    <text x="130" y="292" text-anchor="middle" font-size="11" fill="#dff3fc">Linear Regression</text>
+    <text x="130" y="307" text-anchor="middle" font-size="10" fill="#dff3fc">:5001 · fiyat tahmini</text>
+  </g>
+
+  <g>
+    <rect x="225" y="250" width="180" height="70" rx="8" fill="#0ea5e9"/>
+    <text x="315" y="275" text-anchor="middle" font-size="13" fill="white" font-weight="bold">ml-knn</text>
+    <text x="315" y="292" text-anchor="middle" font-size="11" fill="#dff3fc">KNN Regressor</text>
+    <text x="315" y="307" text-anchor="middle" font-size="10" fill="#dff3fc">:5002 · fiyat tahmini</text>
+  </g>
+
+  <g>
+    <rect x="410" y="250" width="180" height="70" rx="8" fill="#0ea5e9"/>
+    <text x="500" y="275" text-anchor="middle" font-size="13" fill="white" font-weight="bold">ml-rf</text>
+    <text x="500" y="292" text-anchor="middle" font-size="11" fill="#dff3fc">Random Forest</text>
+    <text x="500" y="307" text-anchor="middle" font-size="10" fill="#dff3fc">:5003 · fiyat tahmini</text>
+  </g>
+
+  <g>
+    <rect x="595" y="250" width="180" height="70" rx="8" fill="#f59e0b"/>
+    <text x="685" y="275" text-anchor="middle" font-size="13" fill="white" font-weight="bold">ml-dtree</text>
+    <text x="685" y="292" text-anchor="middle" font-size="11" fill="#fdecc8">Decision Tree</text>
+    <text x="685" y="307" text-anchor="middle" font-size="10" fill="#fdecc8">:5004 · pahalı/ucuz</text>
+  </g>
+
+  <!-- Row 2: svm classifier -->
+  <g>
+    <rect x="325" y="345" width="180" height="70" rx="8" fill="#f59e0b"/>
+    <text x="415" y="370" text-anchor="middle" font-size="13" fill="white" font-weight="bold">ml-svm</text>
+    <text x="415" y="387" text-anchor="middle" font-size="11" fill="#fdecc8">SVM Classifier</text>
+    <text x="415" y="402" text-anchor="middle" font-size="10" fill="#fdecc8">:5005 · pahalı/ucuz</text>
+  </g>
+
+  <!-- Legend -->
+  <rect x="40" y="435" width="14" height="14" fill="#0ea5e9"/>
+  <text x="60" y="446" font-size="11" fill="#374151">Regresyon servisi</text>
+  <rect x="200" y="435" width="14" height="14" fill="#f59e0b"/>
+  <text x="220" y="446" font-size="11" fill="#374151">Sınıflandırma servisi</text>
+  <text x="500" y="446" font-size="10" fill="#6b7280">Tüm servisler aynı veri setini (Clean_Dataset.csv) bağımsız olarak eğitir</text>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

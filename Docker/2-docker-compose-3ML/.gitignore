@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# ============================================================
+#  Script ciktilari (yeniden uretilebilir, repoya gerek yok)
+# ============================================================
+output/*
+
+# --- ISTISNA: README icin kullanilan gorseller ayri klasorde tutulur ---
+!output/figures/
+!output/figures/*.png
+
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
