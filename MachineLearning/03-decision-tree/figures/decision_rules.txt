@@ -1,0 +1,82 @@
+|--- smoker <= 0.50
+|   |--- cholesterol <= 197.50
+|   |   |--- age <= 55.50
+|   |   |   |--- family_history <= 0.50
+|   |   |   |   |--- bmi <= 30.15
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- bmi >  30.15
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |--- family_history >  0.50
+|   |   |   |   |--- age <= 35.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- age >  35.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |--- age >  55.50
+|   |   |   |--- exercise_hours_week <= 1.85
+|   |   |   |   |--- bmi <= 27.55
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- bmi >  27.55
+|   |   |   |   |   |--- class: Orta
+|   |   |   |--- exercise_hours_week >  1.85
+|   |   |   |   |--- systolic_bp <= 129.00
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- systolic_bp >  129.00
+|   |   |   |   |   |--- class: Dusuk
+|   |--- cholesterol >  197.50
+|   |   |--- exercise_hours_week <= 5.25
+|   |   |   |--- age <= 57.50
+|   |   |   |   |--- cholesterol <= 242.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- cholesterol >  242.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- age >  57.50
+|   |   |   |   |--- systolic_bp <= 141.50
+|   |   |   |   |   |--- class: Orta
+|   |   |   |   |--- systolic_bp >  141.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |--- exercise_hours_week >  5.25
+|   |   |   |--- cholesterol <= 229.50
+|   |   |   |   |--- bmi <= 26.05
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- bmi >  26.05
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |--- cholesterol >  229.50
+|   |   |   |   |--- class: Dusuk
+|--- smoker >  0.50
+|   |--- cholesterol <= 204.50
+|   |   |--- age <= 44.50
+|   |   |   |--- family_history <= 0.50
+|   |   |   |   |--- bmi <= 27.65
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- bmi >  27.65
+|   |   |   |   |   |--- class: Orta
+|   |   |   |--- family_history >  0.50
+|   |   |   |   |--- class: Orta
+|   |   |--- age >  44.50
+|   |   |   |--- exercise_hours_week <= 1.85
+|   |   |   |   |--- systolic_bp <= 133.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- systolic_bp >  133.50
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- exercise_hours_week >  1.85
+|   |   |   |   |--- cholesterol <= 174.50
+|   |   |   |   |   |--- class: Dusuk
+|   |   |   |   |--- cholesterol >  174.50
+|   |   |   |   |   |--- class: Orta
+|   |--- cholesterol >  204.50
+|   |   |--- age <= 37.00
+|   |   |   |--- systolic_bp <= 114.50
+|   |   |   |   |--- class: Orta
+|   |   |   |--- systolic_bp >  114.50
+|   |   |   |   |--- class: Yuksek
+|   |   |--- age >  37.00
+|   |   |   |--- bmi <= 27.25
+|   |   |   |   |--- exercise_hours_week <= 2.55
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- exercise_hours_week >  2.55
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |--- bmi >  27.25
+|   |   |   |   |--- exercise_hours_week <= 2.95
+|   |   |   |   |   |--- class: Yuksek
+|   |   |   |   |--- exercise_hours_week >  2.95
+|   |   |   |   |   |--- class: Yuksek
