@@ -1,19 +1,33 @@
-# SLM (Small Language Models)
+# SLM (Small Language Model) Calismalari
 
-Küçük dil modelleriyle yapılan çalışmaları içeren klasör.
+Bu repo, kucuk dil modelleri (Small Language Model) uzerine yaptigim
+calismalari icerir.
 
-## Planlanan Projeler
+## Icerik
 
-| Proje | Konu | Durum |
-|-------|------|-------|
-| Tiny LLM Fine-tuning | Küçük modeli göreve özel eğitme | 🔜 Yakında |
-| Quantization | Model boyutu küçültme (INT8, INT4) | 🔜 Yakında |
-| Edge Deployment | Düşük kaynaklı ortamda çalıştırma | 🔜 Yakında |
+### turkce-slm-rag/
 
-## Kullanılacak Teknolojiler
+Wikipedia'dan toplanan Turkce bilim/teknoloji makaleleri uzerinde egitilen,
+karakter seviyeli, Transformer tabanli (decoder-only) bir kucuk dil modeli.
+Iki bolumden olusur:
 
-- HuggingFace Transformers
-- GGUF / llama.cpp
-- ONNX Runtime
+- Transformer mimarisiyle metin uretimi (bir sonraki karakteri tahmin etme)
+- Retrieval-Augmented Generation (RAG) ile kaynak gosteren soru-cevap sistemi
 
-> Projeler tamamlandıkça bu klasöre eklenecektir.
+Veri, Wikipedia'nin resmi API'si ile 8 kategori altinda ~40 makaleden
+(bilim, teknoloji, matematik, fizik, biyoloji, uzay, kimya, muhendislik)
+toplanmistir.
+
+Detayli kurulum ve kullanim icin: [`turkce-slm-rag/README.md`](turkce-slm-rag/README.md)
+
+## Kullanilan Teknolojiler
+
+- PyTorch (model mimarisi ve egitim)
+- Wikipedia API (veri toplama)
+- scikit-learn (TF-IDF tabanli embedding)
+- Gradio (demo arayuzu)
+- pytest (testler)
+
+## Lisans
+
+MIT

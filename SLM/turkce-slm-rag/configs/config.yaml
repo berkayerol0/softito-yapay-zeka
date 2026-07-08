@@ -1,0 +1,112 @@
+# Türkçe SLM + RAG Projesi - Merkezi Konfigürasyon
+# Bu dosya, projedeki tüm script'lerin (data_collection, train,
+# chunking, embedding vb.) okuduğu tek kaynak (single source of
+# truth) dosyasıdır. Yeni makale/kategori eklemek için kodu değil,
+# bu dosyayı değiştirmek yeterlidir.
+
+# 1) VERİ TOPLAMA (Faz 1 - data_collection.py tarafından okunur)
+wikipedia:
+  dil: "tr"
+  user_agent: "TurkceSLM-RAG/1.0 (egitim ve arastirma amacli)"
+
+  # Her kategori altında çekilecek Wikipedia makale başlıkları.
+  # Kategori isimleri aynı zamanda data/raw/ altında klasör adı olur.
+  kategoriler:
+    yapay_zeka_ml:
+      - "Yapay zeka"
+      - "Makine öğrenmesi"
+      - "Derin öğrenme"
+      - "Sinir ağı"
+      - "Doğal dil işleme"
+      - "Bilgisayarlı görü"
+
+    bilgisayar_bilimi:
+      - "Bilgisayar"
+      - "Algoritma"
+      - "Veri yapısı"
+      - "İşletim sistemi"
+      - "İnternet"
+      - "Yazılım"
+
+    fizik:
+      - "Fizik"
+      - "Kuantum mekaniği"
+      - "Görelilik teorisi"
+      - "Termodinamik"
+      - "Elektromanyetizma"
+
+    matematik:
+      - "Matematik"
+      - "Cebir"
+      - "Geometri"
+      - "İstatistik"
+      - "Olasılık teorisi"
+
+    biyoloji_tip:
+      - "Biyoloji"
+      - "Genetik"
+      - "DNA"
+      - "Evrim"
+      - "Nörobilim"
+      - "Bağışıklık sistemi"
+
+    uzay_astronomi:
+      - "Astronomi"
+      - "Güneş Sistemi"
+      - "Kara delik"
+      - "Evren"
+      - "Uzay araştırmaları"
+
+    kimya:
+      - "Kimya"
+      - "Periyodik tablo"
+      - "Organik kimya"
+      - "Kimyasal element"
+
+    muhendislik:
+      - "Robotik"
+      - "Elektrik mühendisliği"
+      - "Nanoteknoloji"
+
+# 2) VERİ ÖN İŞLEME (preprocessing.py)
+preprocessing:
+  max_karakter: 500_000        # işlenecek toplam metnin üst sınırı
+  min_makale_uzunlugu: 200      # bu uzunluktan kısa makaleler atlanır
+
+# 3) TOKENIZER / DATASET
+dataset:
+  blok_uzunlugu: 128             # her eğitim örneğinin sekans uzunluğu
+  batch_boyutu: 64
+  egitim_orani: 0.9
+
+# 4) MODEL MİMARİSİ
+model:
+  gomme_boyutu: 128
+  katman_sayisi: 4              # transformer decoder blok sayısı
+  baslik_sayisi: 4              # multi-head attention baş sayısı
+  dropout: 0.2
+
+# 5) EĞİTİM
+egitim:
+  epoch_sayisi: 20
+  ogrenme_hizi: 0.001
+  weight_decay: 0.0001
+  seed: 42
+  cikti_checkpoint: "checkpoints/slm_model.pt"
+  cikti_figure: "figures/egitim_sonuclari.png"
+
+# 6) RAG (Faz 2 - chunking, embedding, retrieval)
+rag:
+  chunk_boyutu_kelime: 200      # her pasajın hedef kelime sayısı
+  chunk_ortusme_kelime: 30      # ardışık pasajlar arası örtüşme
+  embedding_modeli: "tfidf"     # "tfidf" | "sentence-transformers"
+  top_k: 3                      # her soru için getirilecek pasaj sayısı
+  chunks_dosyasi: "data/processed/chunks.jsonl"
+  embedding_dosyasi: "data/processed/embeddings.npy"
+
+# 7) YOLLAR (path'ler)
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  metadata_file: "data/metadata.json"
+  temiz_metin_file: "data/processed/temiz_metin.txt"
