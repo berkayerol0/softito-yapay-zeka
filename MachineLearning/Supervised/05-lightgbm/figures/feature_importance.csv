@@ -1,0 +1,16 @@
+Feature,Importance
+duration_sec,1685
+balance,1464
+age,1134
+day_of_month,663
+campaign_contacts,609
+month_enc,583
+pdays,527
+job_enc,401
+education_enc,299
+poutcome_success,283
+personal_loan,238
+marital_enc,196
+previous_contacts,183
+housing_loan,89
+contact_cellular,76
