@@ -14,13 +14,6 @@ Bu proje, derin öğrenmenin "büyük veri ve karmaşık mimari her şeyi çöze
 
 **t-SNE (Özellik Uzayı Görselleştirme):** Bir modelin "iyi öğrenip öğrenmediğini" anlamanın en pratik yollarından biri, modelin verideki sınıfları ne kadar net ayırabildiğini **gözle görmektir**. Üretim ortamındaki ML ekipleri, bir modeli devreye almadan önce genellikle t-SNE ile "bu sınıflar birbirinden yeterince ayrışıyor mu" diye görsel bir sağlık kontrolü yapar — sayısal metrikler (accuracy gibi) tek başına bazen yanıltıcı olabilirken, görsel ayrışma sezgisel bir doğrulama sağlar.
 
-## ⚠️ Bu Dosyada Değiştirdiğim Kısım — Dürüst Açıklama
-
-Orijinal script, Kaggle'daki **"Fresh and Rotten Fruits and Vegetables"** veri setini `kaggle` kütüphanesi ve bir `kaggle.json` API anahtarı ile indiriyordu. Bu hem harici bir Kaggle hesabı/kimlik doğrulaması gerektiriyordu hem de bu ortamda hiç çalıştırılamıyordu (API anahtarı yok).
-
-**Yaptığım değişiklik:** Kaggle indirme bloğunu, aynı veri yapısını (`X_custom`, `y_custom`, `class_names`) üreten bir **sentetik şekil veri seti** ile değiştirdim — OpenCV'nin çizim fonksiyonlarıyla (`cv2.circle`, `cv2.rectangle` vb.) üretilmiş 4 sınıf (Daire, Kare, Üçgen, Yıldız), her birine hafif Gaussian gürültü ve rastgele konum/boyut varyasyonu eklenmiş 64×64 gri tonlamalı görüntüler. **Augmentation fonksiyonu, MLP karşılaştırması, PCA analizleri ve t-SNE görselleştirmesinin hiçbiri değiştirilmedi** — orijinal mantık, orijinal parametrelerle aynen çalışıyor, sadece girdi verisinin kaynağı değişti. Ayrıca `plt.show()` çağrıları, script olarak çalıştırıldığında görselleri `figures/` klasörüne kaydedecek şekilde güncellendi.
-
-Gerçek meyve/sebze görselleriyle çalıştırmak istersen, `kaggle.json` dosyanı projeye ekleyip orijinal Kaggle indirme bloğunu geri koyman yeterli — augmentation/PCA/t-SNE kodunun hiçbiri değişmeden aynı şekilde çalışır.
 
 ## 📊 Sentetik Veri Seti
 

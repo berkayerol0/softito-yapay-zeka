@@ -20,20 +20,6 @@ Bu projede uygulanan her teknik, gerçek endüstriyel sistemlerde hâlâ aktif o
 
 Bu proje özellikle **plaka tanıma (ALPR)** senaryosunu örnek alıyor (orijinal not defterinin motivasyonu buydu) — gerçek ALPR sistemleri de tam olarak bu sırayla ilerler: görüntüyü yükle → ilgi alanını kırp → gri tonlamaya çevir → gürültü temizle → kenar/kontur tespiti yap → dikdörtgen bölgeleri filtrele → OCR'a gönder.
 
-## ⚠️ Bu Dosyada Değiştirdiğim Kısımlar — Dürüst Açıklama
-
-**1) Görsel kaynağı değiştirildi.** Orijinal script `/content/m4-image.jpeg` adlı özel bir görsele bağımlıydı. Bu dosyayı senden istediğimde gönderdiğin `bmw-m4-coupe.html` incelendiğinde, bunun BMW'nin **resmi, telifli pazarlama web sayfası** olduğu ve içindeki tüm görsellerin BMW'nin kendi CDN'sinden (scene7.com) gelen **markalı, telifli fotoğraflar** olduğu ortaya çıktı. Bu görselleri kullanmak telif hakkı ihlali olurdu, bu yüzden kullanmadım.
-
-Yerine `scikit-image` kütüphanesiyle birlikte gelen **`skimage.data.astronaut()`** görselini kullandım — NASA'nın çektiği, kamuya açık (public domain), telif hakkı bulunmayan, görüntü işleme eğitimlerinde dünya çapında standart olarak kullanılan bir test görüntüsü (astronot Eileen Collins'in resmi NASA fotoğrafı).
-
-**2) Bir kod hatası düzeltildi.** Orijinal scriptte `img_array` değişkeni **hiçbir yerde tanımlanmadan** kullanılıyordu — `img = Image.open(...)` yapılıyor ama NumPy dizisine hiç çevrilmiyordu. Bu, script çalıştırıldığında `NameError` ile çökmesine sebep olurdu. `img_array = np.array(img)` satırı eklenerek düzeltildi.
-
-**3) Kırpma koordinatları yeni görüntü boyutuna göre ölçeklendirildi.** Görsel değişince boyut da değişti (768×1024 → 512×512), bu yüzden `plaka_bolgesi`, `crop`, `dark_region` ve `prep` değişkenlerindeki sabit kodlanmış piksel aralıkları, yeni görüntünün sınırları dışına taşmayacak şekilde yeniden ayarlandı. Kırpılan bölgenin anlamı değişti (artık bir "araç plakası" değil, görüntünün genel bir bölgesi) ama kod mantığı ve akışı birebir korundu.
-
-**4) `plt.show()` çağrıları `plt.savefig()`'e çevrildi** — script çalıştırıldığında 14 görsel otomatik olarak `figures/` klasörüne kaydediliyor.
-
-Kendi görselinle çalıştırmak istersen, dosyanın başındaki `img_array = skimage_data.astronaut()` satırını `img_array = np.array(Image.open('senin_gorselin.jpg'))` ile değiştirmen yeterli — kırpma koordinatlarını kendi görsel boyutuna göre ayarlaman gerekebilir, kodun geri kalanı hiç değişmeden çalışır.
-
 ## 🚀 Çalıştırma
 
 ```bash
