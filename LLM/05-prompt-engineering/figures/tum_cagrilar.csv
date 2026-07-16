@@ -1,0 +1,11 @@
+strategy,label,response_time_sec,word_count
+zero_shot,Zero-shot,1.42,58
+few_shot,Few-shot,0.81,6
+chain_of_thought,Chain-of-Thought,2.15,142
+system_prompt,Kıdemli yazılımcı,1.68,96
+system_prompt,Yeni başlayanlara anlatan eğitmen,1.94,118
+system_prompt,Şüpheci teknik incelemeci,1.77,103
+temperature,T=0.0,1.21,34
+temperature,T=0.5,1.33,38
+temperature,T=1.0,1.29,41
+temperature,T=1.5,1.38,45
