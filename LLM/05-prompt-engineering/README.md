@@ -26,12 +26,27 @@ Script 5 farklı prompt tekniğini gerçek API üzerinden çalıştırır, termi
 
 ## 📊 Neyi Ölçüyor
 
-Script her API çağrısında şunları kaydediyor: yanıt metni, yanıt süresi (saniye), yanıt uzunluğu (kelime sayısı). Bunlardan 4 grafik üretiliyor:
+Script her API çağrısında şunları kaydediyor: yanıt metni, yanıt süresi (saniye), yanıt uzunluğu (kelime sayısı).
 
-- **`yanit_uzunlugu.png`** — Zero-shot / Few-shot / Chain-of-Thought yanıtlarının kelime sayısı karşılaştırması
-- **`yanit_suresi.png`** — Aynı 3 stratejinin API yanıt süresi karşılaştırması
-- **`system_prompt_karsilastirma.png`** — "Kıdemli yazılımcı" / "Yeni başlayanlara anlatan eğitmen" / "Şüpheci teknik incelemeci" system prompt'larının yanıt uzunluğuna etkisi
-- **`temperature_karsilastirma.png`** — Temperature (0.0 → 1.5) arttıkça yanıt uzunluğunun/çeşitliliğinin nasıl değiştiği
+### Stratejiye Göre Yanıt Uzunluğu
+![Yanıt Uzunluğu](figures/yanit_uzunlugu.png)
+
+Zero-shot / Few-shot / Chain-of-Thought yanıtlarının kelime sayısı karşılaştırması.
+
+### Stratejiye Göre API Yanıt Süresi
+![Yanıt Süresi](figures/yanit_suresi.png)
+
+Aynı 3 stratejinin API yanıt süresi karşılaştırması.
+
+### System Prompt'a Göre Yanıt Uzunluğu
+![System Prompt Karşılaştırma](figures/system_prompt_karsilastirma.png)
+
+"Kıdemli yazılımcı" / "Yeni başlayanlara anlatan eğitmen" / "Şüpheci teknik incelemeci" system prompt'larının yanıt uzunluğuna etkisi.
+
+### Temperature Arttıkça Yanıt Uzunluğu Değişimi
+![Temperature Karşılaştırma](figures/temperature_karsilastirma.png)
+
+Temperature (0.0 → 1.5) arttıkça yanıt uzunluğunun/çeşitliliğinin nasıl değiştiği.
 
 Ayrıca tüm ham çağrılar `figures/tum_cagrilar.csv` (tablo) ve `figures/tum_yanitlar.json` (tam yanıt metinleriyle) olarak kaydediliyor.
 
