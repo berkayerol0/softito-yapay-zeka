@@ -1,0 +1,43 @@
+soru,cevap,kaynaklar
+Yapay zeka ile makine öğrenmesi arasındaki fark nedir?,"Bağlamda verilen bilgilere göre yapay zeka (YZ) ile makine öğrenimi (ML) arasındaki farklar şunlardır:
+
+1.  **Kapsam ve İlişki:**
+    *   Makine öğrenimi, yapay zekâda akademik bir disiplin ve bir alandır. Yani, makine öğrenimi yapay zekanın bir parçası olarak ortaya çıkmıştır ve bilgisayarların deneyimlerinden öğrenerek karmaşık görevleri otomatikleştirmeyi sağlayan bir yapay zeka alanıdır.
+    *   Ancak, tüm makine öğreniminin YZ'nin bir parçası olup olmadığı konusunda bir anlaşmazlık vardır; bazı görüşlere göre makine öğreniminin yalnızca 'akıllı' bir alt kümesi YZ'nin bir parçasıdır.
+
+2.  **İşlev ve Yaklaşım (Judea Pearl'e göre):**
+    *   **Makine öğrenimi:** Pasif gözlemlere dayanarak öğrenir ve tahmin eder. Veri analizi yaparak örüntüler tespit etme ve tahminlerde bulunma yeteneğine dayanır.
+    *   **Yapay zeka:** Hedeflerine başarılı bir şekilde ulaşma şansını en üst düzeye çıkaran eylemleri öğrenmek ve gerçekleştirmek için çevre ile etkileşime giren aracı ifade eder. Bu, YZ'nin daha aktif, etkileşimli ve hedef odaklı bir rolünü vurgular.
+
+3.  **Tarihsel Gelişim:**
+    *   Makine öğrenimi, yapay zekanın akademik bir disiplin olarak ilk günlerinde makinelerin verilerden öğrenmesini sağlamakla ilgilenen araştırmacıların çabalarından doğmuştur.
+    *   Ancak, mantıksal, bilgiye dayalı yaklaşım üzerindeki artan vurgu, yapay zeka ile makine öğrenimi arasında bir sürtüşmeye neden olmuştur.
+
+Özetle, makine öğrenimi genellikle yapay zekanın bir alt alanı olarak kabul edilir ve pasif gözlemlerden öğrenerek tahminlerde bulunmaya odaklanırken; yapay zeka, hedeflerine ulaşmak için çevreyle etkileşime giren ve eylemler gerçekleştiren daha geniş bir ""akıllı aracı"" kavramını ifade eder.",Makine öğrenimi | Makine öğrenimi | Makine öğrenimi
+Derin öğrenme hangi tür problemlerde kullanılır?,"Derin öğrenme aşağıdaki tür problemlerde kullanılır:
+
+*   Yüz tanıma sistemleri
+*   Ses tanıma sistemleri
+*   Araçlarda otopilot özelliği ve sürücüsüz kendi kendine giden araçlar
+*   Alarm sistemleri (kamera kayıtlarını sürekli kontrol etmek yerine, yalnızca olağandışı hareketlerde alarm sisteminin devreye girmesi gibi)
+*   Sağlık sektöründe kanser araştırmaları ve kanserli hücre örneklerinin tanısı
+*   Görüntü iyileştirmeleri
+*   Tavsiye sistemleri (örneğin beğenilebilecek ürün, müzik ve film önerileri sunmada)
+*   Siber tehdit analizleri
+*   Bilgisayarlı görü
+*   Doğal dil işleme
+*   Tıbbi görüntü analizi
+*   Oyun stratejileri
+
+Ayrıca, otomotiv, eğlence, finans ve sağlık gibi sektörlerde önemli rol oynar.",Derin öğrenme | Derin öğrenme | Derin öğrenme
+Makine öğrenmesinin başlıca türleri nelerdir?,"Bağlamda belirtildiğine göre, makine öğrenimi algoritmaları hedeflenen sonuca göre birkaç sınıfa ayrılabilmektedir. Ancak bu sınıfların tam listesi bağlamda doğrudan verilmemiştir.
+
+Bununla birlikte, bağlamda makine öğrenmesinin çeşitli yaklaşımları ve türleri şu şekilde geçmektedir:
+
+*   **Gözetimli öğrenme:** Derin öğrenmenin gerçekleştirilebileceği yaklaşımlardan biri olarak belirtilmiştir.
+*   **Yarı gözetimli öğrenme:** Derin öğrenmenin gerçekleştirilebileceği yaklaşımlardan biri olarak belirtilmiştir.
+*   **Gözetimsiz öğrenme:** Derin öğrenmenin gerçekleştirilebileceği yaklaşımlardan biri olarak ve veri madenciliğinin odaklandığı bir yöntem olarak bahsedilmiştir.
+*   **Pekiştirmeli öğrenme:** Derin yapay sinir ağlarının başarılı sonuçlar verdiği bir yaklaşım olarak belirtilmiştir.
+*   **Derin öğrenme:** Yapay sinir ağları ve benzeri makine öğrenme algoritmalarını kapsayan bir çalışma alanı olarak tanımlanmıştır.
+
+Bağlam, makine öğrenimi algoritmalarının sınıflara ayrıldığını belirtse de, bu sınıfların genel bir listesini sunmamakta; ancak derin öğrenme ve veri madenciliği bağlamında yukarıdaki öğrenme yaklaşımlarını zikretmektedir.",Makine öğrenimi | Makine öğrenimi | Derin öğrenme

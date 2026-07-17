@@ -1,0 +1,5 @@
+aday,metin,bleu,rouge_l
+Çok Yakın,Transformer mimarisi 2017'de Google araştırmacıları tarafından geliştirilmiştir.,0.1782,0.7586
+Farklı Dizilim,Google araştırmacıları 2017 yılında Transformer mimarisini geliştirdi.,0.0905,0.4286
+Eksik Bilgi,Transformer Google tarafından geliştirilen bir sistemdir.,0.0385,0.4348
+Alakasız,Bugün hava gerçekten çok güzel ve güneşli görünüyor.,0.0,0.0

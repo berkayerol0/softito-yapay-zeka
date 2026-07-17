@@ -1,0 +1,6 @@
+tur,soru,cevap,sure_sn
+1,"Merhaba, ödeme sistemimiz tamamen çöktü, hiçbir müşteri işlem yapamıyor.","Ödeme sisteminin tamamen çöktüğünü ve hiçbir müşterinin işlem yapamadığını anlıyorum. Bu durumun önceliği **Kritik** olarak belirlenmiştir.
+
+Şu anda bir destek bileti açmamı ister misiniz?",2.06
+2,Az önce ne sorun bildirdiğimi ve bunun ne kadar öncelikli olduğunu hatırlıyor musun?,"Evet, ödeme sisteminizin tamamen çöktüğünü ve hiçbir müşterinin işlem yapamadığını bildirdiniz. Bu durumun önceliği **Kritik** olarak belirlenmiştir.",0.59
+3,Bu sorun için bir destek bileti aç.,"Destek biletiniz başarıyla oluşturulmuştur. Bilet numarası: **TCK-1000**. Kategori: Ödeme Sistemi, Öncelik: Kritik.",1.6
