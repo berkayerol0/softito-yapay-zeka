@@ -38,12 +38,13 @@ Görüntü ve zaman serisi olmak üzere iki farklı veri türünde derin öğren
 | 01 | [OpenCV](DeepLearning/CNN/03-opencv) | RGB/HSV/LAB renk uzayları, filtreleme, kenar tespiti, morfolojik işlemler ve kontur analizini plaka tanıma (ALPR) senaryosu üzerinden uyguladık | OpenCV |
 | 02 | [Görüntü Ön İşleme](DeepLearning/CNN/02-goruntu-on-isleme) | Veri artırma (augmentation), PCA ile boyut indirgeme ve t-SNE ile özellik uzayı görselleştirme yaptık | Scikit-learn |
 | 03 | [Fashion-MNIST CNN](DeepLearning/CNN/01-fashion-mnist-cnn) | Fashion-MNIST üzerinde uçtan uca CNN sınıflandırma yaptık (%90.46 test doğruluğu) | PyTorch |
-| 04 | [GRU Zaman Serisi](DeepLearning/gru-zaman-serisi) | Sentetik ürün talebi serisinde geçmiş 14 güne bakarak bir sonraki günü tahmin eden GRU modeli kurduk (RMSE 2.44, MAE 1.93) | PyTorch |
+| 04 | [GRU Zaman Serisi](DeepLearning/GRU) | Sentetik ürün talebi serisinde geçmiş 14 güne bakarak bir sonraki günü tahmin eden GRU modeli kurduk (RMSE 2.44, MAE 1.93) | PyTorch |
 
 **Öne çıkan görseller:**
 
 ![Confusion Matrix](DeepLearning/CNN/01-fashion-mnist-cnn/figures/confusion_matrix.png)
-![Gerçek vs Tahmin](DeepLearning/gru-zaman-serisi/figures/gercek_vs_tahmin.png)
+![Gerçek vs Tahmin](DeepLearning/GRU/figures/gercek_vs_tahmin.png)
+![Eğitim Kaybı](DeepLearning/GRU/figures/egitim_loss.png)
 
 ---
 
@@ -67,9 +68,9 @@ Keşifsel veri analizi (EDA) projeleri — veri yükleme, temizleme, tek/çift d
 
 | # | Proje | Bu Projede Ne Yapıldı | Teknoloji |
 |---|-------|----------|-----------|
-| 01 | [teen-mental-health](EDA/teen-mental-health) | Sosyal medya kullanımı ile gençlerin ruh sağlığı göstergeleri (stres, anksiyet, uyku, akademik performans) arasındaki ilişkileri; veri temizleme, tek/çift değişkenli analiz ve feature engineering adımlarıyla inceledik | Pandas, Seaborn, kagglehub |
+| 01 | [teen-mental-health](EDA) | Sosyal medya kullanımı ile gençlerin ruh sağlığı göstergeleri (stres, anksiyet, uyku, akademik performans) arasındaki ilişkileri; veri temizleme, tek/çift değişkenli analiz ve feature engineering adımlarıyla inceledik | Pandas, Seaborn, kagglehub |
 
-![Korelasyon Heatmap](EDA/teen-mental-health/04_cift_degiskenli_analiz/figures/04_korelasyon_heatmap.png)
+![Korelasyon Heatmap](EDA/04_cift_degiskenli_analiz/figures/04_korelasyon_heatmap.png)
 
 ---
 
